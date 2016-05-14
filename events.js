@@ -40,12 +40,10 @@
 
   //事件API迭代
   function _eventApi(iterate,events,name,callback,context){
-    if(typeof name ==="string"){
-      var names=_eventSplit.test(name)?name.split(_eventSplit):[name];
+    var names=_eventSplit.test(name)?name.split(_eventSplit):[name];
       _forEach(names,function(n){
         events=iterate(events,n,callback,context);
       });
-    }
     return events;
   }
 
