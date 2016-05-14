@@ -18,3 +18,5 @@ MyEvent.off(); // remove all events callback for all event type and all callback
 #trigger event for example:
 MyEvent.trigger("click","once");
 you can pass any your params in trigger then using in callback 
+
+
