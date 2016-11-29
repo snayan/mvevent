@@ -1,31 +1,61 @@
-# customer-event
-define and trigger your customer event 
+# mvevent
+define and trigger your event 
 
-### bind event for example:
-	MyEvent.on("change",function(msg){
-		alert("change event msg is "+ msg);
-	});
-	
-	MyEvent.on("click dbclick",function(msg){
-        alert("click dbclick event msg is " + msg);
-    },this);
+## What's it
 
+mvevent is a object that can define your own event name and trigger event in everywhere and everywhen.
+it has no dependencies.
 
-### unbind event for example:
-	MyEvent.off("click"); 
-	// remove all "click" events  callback for all context 
-	
-	MyEvent.off("click",click);
-    // remove "click" events callback only for click callback and all context 
-    
-    MyEvent.off("click",null,MyEvent);
-    //remove "click" events callback only for Myevent context and all callback
-    
-    MyEvent.off(); // remove all events callback for all event type and all callback and all context 
+## Usage
 
-### trigger event for example:
-    MyEvent.trigger("click","once");
+* `npm install mvevent` or 
 
-you can pass any your params in trigger then using in callback 
+  `bower install mvevent `
+
+* include `mvevent.js` in your app
+
+## Example
+
+you can use it like using browser's event style, `$div.on('click',fu)` or `$div.off('click')`.
+
+* ##### bind event
+```
+    //if you don't give callback function ,the callback function will be empty function by default.
+    //if you don't give context ,the context will be empty object by default.
+    MvEvent.on('name');
+    MvEvent.on('name',fn);
+    MvEvent.on('name',fn,context);
+```
+you can bind a event that will be removed when it is triggered once;
+```
+    Mvevent.once('name',fn,context);
+```
+
+* ##### unbind event
+if you only give event name,then will remove all events associated with name.
+you also can give the callback function or context.
+
+```
+MvEvent.off('name');
+MvEvent.off('name',fn);
+MvEvent.off('name',fn,context);
+```
+
+* ##### trigger event
+trigger event with your arguments.
+
+```
+    MvEvent.trigger('name');
+    MvEvent.trigger('name',arg,args,...);
+```
+
+## Contributing
+I welcome contributions of all kinds from anyone.
+* [Bug reports](https://github.com/snayan/mvevent/issues) 
+* [Feature requests](https://github.com/snayan/mvevent/issues)
+* [Pull requests](https://github.com/snayan/mvevent/pulls)
+
+## License
+Licensed under the MIT License
 
 

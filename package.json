@@ -1,0 +1,22 @@
+{
+  "name": "mvevent",
+  "version": "1.0.0",
+  "description": "define and trigger your customer event",
+  "main": "mvevent.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://snayan@github.com/snayan/mvevent.git"
+  },
+  "keywords": [
+    "event"
+  ],
+  "author": "snayan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/snayan/mvevent/issues"
+  },
+  "homepage": "https://github.com/snayan/mvevent#readme"
+}

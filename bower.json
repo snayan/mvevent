@@ -1,0 +1,20 @@
+{
+  "name": "mvevent",
+  "description": "define and trigger your customer event",
+  "main": "mvevent.js",
+  "authors": [
+    "snayan"
+  ],
+  "license": "MIT",
+  "keywords": [
+    "event"
+  ],
+  "homepage": "https://github.com/snayan/mvevent",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
