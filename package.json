@@ -1,6 +1,6 @@
 {
   "name": "mvevent",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "define and trigger your customer event",
   "main": "mvevent.js",
   "scripts": {
